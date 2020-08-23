@@ -2,13 +2,13 @@
 
 ## Exercise I
 
-a) O(n^3)
+a) Exponential - O(n^3)
 
 
-b) O(n^2)
+b) Polynomial - O(n^2)
 
 
-c) O(n)
+c) Linear - O(n)
 
 ## Exercise II
 

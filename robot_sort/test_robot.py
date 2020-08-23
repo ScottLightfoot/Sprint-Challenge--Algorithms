@@ -40,21 +40,23 @@ class Test(unittest.TestCase):
         robot = SortingRobot(self.small_list)
         robot.sort()
         self.assertLess(robot._time, 110)
+        print('\n\nstretch goal times\n---------------')
+        print(f'\ncode_runtime: {robot._time}\ntarget: 110')
 
         robot = SortingRobot(self.medium_list)
         robot.sort()
-        print(robot._time)
         self.assertLess(robot._time, 1948)
+        print(f'\n\ncode_runtime: {robot._time}\ntarget: 1948')
 
         robot = SortingRobot(self.large_list)
         robot.sort()
-        print(robot._time)
         self.assertLess(robot._time, 27513)
+        print(f'\n\ncode_runtime: {robot._time}\ntarget: 27513')
 
         robot = SortingRobot(self.large_varied_list)
         robot.sort()
-        print(robot._time)
         self.assertLess(robot._time, 28308)
+        print(f'\n\ncode_runtime: {robot._time}\ntarget: 28308')
 
 
 if __name__ == '__main__':
